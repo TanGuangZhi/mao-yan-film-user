@@ -1,0 +1,706 @@
+.el-carousel{
+    margin-top: 81px;
+}
+.el-carousel__item img {
+    width: 100%;
+}
+
+.main .main1 {
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main .main1 article {
+    width: 800px;
+}
+.main .main1 article .zhuL1 {
+    height: 617px;
+    margin-bottom: 62px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_1 {
+    font-size: 26px;
+    color: #ef4238;
+    margin-left: 10px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_3 {
+    font-size: 26px;
+    color: #faaf00;
+    margin-left: 10px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_2 {
+    margin-right: 60px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_4 {
+    margin-right: 60px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_2 a {
+    font-size: 14px;
+    color: #ef4238;
+    position: relative;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_2 a::before {
+    content: "";
+    width: 0px;
+    border-bottom: 1px solid transparent;
+    transition: all linear 1s;
+    position: absolute;
+    left: 14px;
+    bottom: 0;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_2 a:hover::before {
+    width: 34px;
+    border-color: #ef4238;
+    left: -2px;
+}
+.main .main1 article .zhuL1 .zhuL1_1 .zhuL1_1_2 .zhuL1_1_2_2 {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url("../../../public/images/icon_1.png");
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl {
+    margin: 0;
+    width: 750px;
+    height: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd {
+    margin: 0;
+    width: 160px;
+    height: 259px;
+    background-color: #fff;
+    border: 1px solid #efefef;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 {
+    width: 160px;
+    height: 220px;
+    position: relative;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 img{
+    width: 160px;
+    height: 220px;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 .link div {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 160px;
+    height: 80px;
+    background: url("../../../public/images/index_bei.png");
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 .link div span:nth-of-type(1) {
+    font-size: 16px;
+    color: #fff;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 .link div span:nth-of-type(2) i:nth-of-type(1) {
+    font-size: 18px;
+    color: #ffb400;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 .link div span:nth-of-type(2) i:nth-of-type(2) {
+    font-size: 14px;
+    color: #ffb400;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd .zhuL1_2_1 .link .DIMAX3 {
+    position: absolute;
+    top: 4px;
+    left: -3px;
+    display: inline-block;
+    width: 69px;
+    height: 25px;
+    background: url("../../../public/images/3dmax.png");
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl dd:hover {
+    box-shadow: 2px 2px 20px 0 #d8d8d8;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl .zhuL1_2_2 {
+    width: 160px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl .zhuL1_2_2 a {
+    display: block;
+    color: #f00;
+    padding: 10px 60px;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl .zhuL1_2_2:hover {
+    background: #f00;
+}
+.main .main1 article .zhuL1 .zhuL1_2 dl .zhuL1_2_2:hover a {
+    color: #fff;
+}
+.main .main1 .zhuL2 .zhuL2_1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main .main1 .zhuL2 .zhuL2_1 .zhuL2_1_1 {
+    font-size: 26px;
+    color: #2d98f3;
+    margin-left: 10px;
+}
+.main .main1 .zhuL2 .zhuL2_1 .zhuL2_1_2 {
+    margin-right: 60px;
+}
+.main .main1 .zhuL2 .zhuL2_1 .zhuL2_1_2 a {
+    font-size: 14px;
+    color: #2d98f3;
+    position: relative;
+}
+.main .main1 .zhuL2 .zhuL2_1 .zhuL2_1_2 a::before {
+    content: "";
+    width: 0px;
+    border-bottom: 1px solid transparent;
+    transition: all linear 1s;
+    position: absolute;
+    left: 14px;
+    bottom: 0;
+}
+.main .main1 .zhuL2 .zhuL2_1 .zhuL2_1_2 a:hover::before {
+    width: 34px;
+    border-color: #2d98f3;
+    left: -2px;
+}
+.main .main1 .zhuL2 .zhuL2_1 .zhuL2_1_2 .zhuL2_1_2_2 {
+    color: #2d98f3;
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url("../../../public/images/icon_2.png");
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.main .main1 .zhuL2 dl {
+    width: 750px;
+    height: 705px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.main .main1 .zhuL2 dl dd {
+    margin: 0;
+    width: 162px;
+    height: 327px;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 {
+    border: 1px solid #efefef;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_1 {
+    width: 160px;
+    height: 220px;
+    background-color: #fff;
+    position: relative;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_1 div {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 160px;
+    height: 80px;
+    background: url("../../../public/images/index_bei.png");
+    padding: 0 10px 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_1 div span {
+    color: #fff;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_2 {
+    padding-left: 10px;
+    font-size: 14px;
+    color: #ffb400;
+    background-color: #fbfbfb;
+    height: 34px;
+    line-height: 34px;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_3 {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    display: flex;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_3 a {
+    display: inline-block;
+    width: 50%;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_3 a:nth-of-type(1) {
+    color: #999;
+    font-size: 14px;
+    border-right: 1px dotted #e5e5e5;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_3 a:nth-of-type(2) {
+    color: #2d98f3;
+    font-size: 14px;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_2 .zhuL2_2_3 a:nth-of-type(2):hover {
+    color: #fff;
+    background-color: #2d98f3;
+}
+.main .main1 .zhuL2 dl dd .zhuL2_3 {
+    color: #999;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+}
+.main .main1 .zhuL2 dl dd:hover > .zhuL2_2 {
+    box-shadow: 2px 2px 20px 0 #d8d8d8;
+}
+.main aside {
+    width: 360px;
+    height: 2000px;
+}
+.main aside .zhuR1 {
+    height: 473px;
+}
+.main aside .zhuR1 .zhuR1_1 span {
+    color: #ef4238;
+    font-size: 26px;
+}
+.main aside .zhuR1 .zhuR1_2 {
+    margin-top: 23px;
+    height: 424px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:hover {
+    background-color: #fafafa;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) {
+    border: 1px solid #efefef;
+    height: 80px;
+    display: flex;
+    margin-bottom: 11px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) div:nth-of-type(1) {
+    width: 120px;
+    height: 80px;
+    position: relative;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) div:nth-of-type(1) i {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 26px;
+    background: url("../../../public/images/shouye_zhuti _R_1.png");
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) div:nth-of-type(2) {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) div:nth-of-type(2) .zhuR1_2_h2 {
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) div:nth-of-type(2) p {
+    margin-top: 12px;
+    color: #ef4238;
+    font-size: 14px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:nth-of-type(1) div:nth-of-type(2) p span {
+    color: #ef4238;
+    font-size: 14px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) {
+    height: 36px;
+    line-height: 36px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) a {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) a .zhuR1_2_2 i {
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    width: 20px;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) a .zhuR1_2_2 .qian23 {
+    color: #ef4238;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) a .zhuR1_2_2 .zhuR1_2_2_1 {
+    font-size: 16px;
+    color: #333;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) a .zhuR1_2_3 {
+    font-size: 14px;
+    color: #ef4238;
+}
+.main aside .zhuR1 .zhuR1_2 ul li:not( :nth-of-type(1)) a .zhuR1_2_3 .zhuR1_2_3_1 {
+    font-size: 14px;
+    color: #ef4238;
+}
+.main aside .zhuR2 {
+    margin-top: 29px;
+    border: 1px solid #efefef;
+    background-color: #fdfdfd;
+    display: flex;
+}
+.main aside .zhuR2 .zhuR21 {
+    width: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #ef4238;
+}
+.main aside .zhuR2 .zhuR21 span {
+    font-size: 17px;
+}
+.main aside .zhuR2 .zhuR22 {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_1 {
+    font-size: 14px;
+    color: #ef4238;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_1 .zhuR22_12 {
+    font-size: 30px;
+    color: #ef4238;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_11 {
+    margin-right: 10px;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_11 a {
+    color: #ef4238;
+    font-size: 14px;
+    position: relative;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_11 a::before {
+    content: "";
+    width: 0px;
+    border-bottom: 1px solid transparent;
+    transition: all linear 1s;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_11 a:hover::before {
+    width: 60px;
+    border-color: #ef4238;
+    left: -2px;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(1) .zhuR22_11 i {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url("../../../public/images/icon_1.png");
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(2) .zhuR22_21 {
+    font-size: 14px;
+    color: #999;
+}
+.main aside .zhuR2 .zhuR22 p:nth-of-type(2) .zhuR22_22 {
+    float: right;
+    font-size: 14px;
+    color: #999;
+    margin-right: 10px;
+}
+.main aside .zhuR3 {
+    margin-top: 80px;
+}
+.main aside .zhuR3 .zhuR3_1 {
+    width: 360px;
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main aside .zhuR3 .zhuR3_1 .zhuR3_1_1 {
+    font-size: 26px;
+    color: #ffb400;
+}
+.main aside .zhuR3 .zhuR3_1 .zhuR3_1_2 a {
+    font-size: 14px;
+    color: #ffb400;
+    position: relative;
+}
+.main aside .zhuR3 .zhuR3_1 .zhuR3_1_2 a::before {
+    content: "";
+    width: 0px;
+    border-bottom: 1px solid transparent;
+    transition: all linear 1s;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+}
+.main aside .zhuR3 .zhuR3_1 .zhuR3_1_2 a:hover::before {
+    width: 88px;
+    border-color: #ffb400;
+    left: -2px;
+}
+.main aside .zhuR3 .zhuR3_1 .zhuR3_1_2 i {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url("../../../public/images/shouye_zhuti _R_2.png");
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.main aside .zhuR3 .zhuR3_2 {
+    margin-top: 23px;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:hover {
+    background-color: #fafafa;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 {
+    border: 1px solid #efefef;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a {
+    display: flex;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_1 {
+    width: 140px;
+    height: 194px;
+    position: relative;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_1 i {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 26px;
+    background: url("../../../public/images/shouye_zhuti _R_3.png");
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_2 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_2 div .zhuR3_21_21 {
+    font-size: 18px;
+    color: #333;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_2 div p:nth-of-type(1) {
+    margin-top: 12px;
+    color: #999;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_2 div p:nth-of-type(2) {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #ffb400;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_21 a .zhuR3_21_2 div p:nth-of-type(2) span {
+    font-size: 14px;
+    color: #ffb400;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22 {
+    border: 1px solid #efefef;
+    position: relative;
+    width: 170px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22 a .zhuR3_22_1 {
+    width: 170px;
+    height: 118px;
+    position: relative;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22 a .zhuR3_22_1 i {
+    position: absolute;
+    top: 0;
+    padding-left: 4px;
+    width: 16px;
+    color: #fff;
+    background-color: #ffb400;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22 a .zhuR3_22_2 p:nth-of-type(1) {
+    font-size: 18px;
+    color: #333;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22 a .zhuR3_22_2 p:nth-of-type(2) {
+    font-size: 18px;
+    color: #333;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #fdb863;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22 a .zhuR3_22_2 p:nth-of-type(2) span {
+    font-size: 14px;
+    color: #fdb863;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_22:nth-of-type(3) {
+    margin-left: 16px;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:not( :nth-child(-n+3)) {
+    line-height: 36px;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:not( :nth-child(-n+3)) a {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:not( :nth-child(-n+3)) a .zhuR3_2_2 i {
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    width: 20px;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:not( :nth-child(-n+3)) a .zhuR3_2_2 .zhuR3_2_2_1 {
+    font-size: 16px;
+    color: #333;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:not( :nth-child(-n+3)) a .zhuR3_2_3 {
+    font-size: 14px;
+    color: #fdb863;
+}
+.main aside .zhuR3 .zhuR3_2 ul li:not( :nth-child(-n+3)) a .zhuR3_2_3 .zhuR1_2_3_1 {
+    font-size: 14px;
+    color: #fdb863;
+}
+.main aside .zhuR3 .zhuR3_2 ul .zhuR3_23 {
+   /* margin-top: 10px;*/
+}
+.main aside .zhuR4 {
+    margin-top: 80px;
+}
+.main aside .zhuR4 .zhuR4_1 {
+    width: 360px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main aside .zhuR4 .zhuR4_1 .zhuR4_1_1 {
+    font-size: 26px;
+    color: #ffb400;
+}
+.main aside .zhuR4 .zhuR4_1 .zhuR4_1_2 a {
+    font-size: 14px;
+    color: #ffb400;
+    position: relative;
+}
+.main aside .zhuR4 .zhuR4_1 .zhuR4_1_2 a::before {
+    content: "";
+    width: 0px;
+    border-bottom: 1px solid transparent;
+    transition: all linear 1s;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+}
+.main aside .zhuR4 .zhuR4_1 .zhuR4_1_2 a:hover::before {
+    width: 88px;
+    border-color: #ffb400;
+    left: -2px;
+}
+.main aside .zhuR4 .zhuR4_1 .zhuR4_1_2 i {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background: url("../../../public/images/shouye_zhuti _R_2.png");
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+.main aside .zhuR4 .zhuR4_2 {
+    margin-top: 23px;
+    height: 424px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:hover {
+    background-color: #fafafa;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) {
+    border: 1px solid #efefef;
+    height: 80px;
+    display: flex;
+    margin-bottom: 11px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) div:nth-of-type(1) {
+    width: 120px;
+    height: 80px;
+    position: relative;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) div:nth-of-type(1) i {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 26px;
+    background: url("../../../public/images/shouye_zhuti _R_4.png");
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) div:nth-of-type(2) {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) div:nth-of-type(2) .zhuR4_2_h2 {
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) div:nth-of-type(2) p {
+    margin-top: 12px;
+    color: #ffb400;
+    font-size: 14px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:nth-of-type(1) div:nth-of-type(2) p span {
+    color: #ffb400;
+    font-size: 14px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) {
+    height: 36px;
+    line-height: 36px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) a {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) a .zhuR4_2_2 i {
+    font-size: 18px;
+    color: #999;
+    display: inline-block;
+    width: 20px;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) a .zhuR4_2_2 .qian23 {
+    color: #ffb400;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) a .zhuR4_2_2 .zhuR4_2_2_1 {
+    font-size: 16px;
+    color: #333;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) a .zhuR4_2_3 {
+    font-size: 14px;
+    color: #ffb400;
+}
+.main aside .zhuR4 .zhuR4_2 ul li:not( :nth-of-type(1)) a .zhuR4_2_3 .zhuR4_2_3_1 {
+    font-size: 14px;
+    color: #ffb400;
+}

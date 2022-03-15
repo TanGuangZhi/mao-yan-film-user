@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+}
+header {
+    border-bottom: 2px solid #e02025;
+}
+header div {
+    width: 980px;
+    height: 58px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+header div a {
+    display: block;
+    width: 133px;
+    height: 40px;
+    /*background: url("../IMG/logo_s.png") no-repeat;*/
+}
+
+.zhuche {
+    width: 980px;
+    height: 390px;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.zhuche input {
+    width: 248px;
+    height: 32px;
+    font-size: 12px;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
+.zhuche input:focus {
+    outline: 1px solid #e02025;
+    border: none;
+}
+.zhuche label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+}
+.zhuche div {
+    height: 36px;
+    padding: 8px 0;
+}
+.zhuche .zhuche1 span {
+    font-size: 12px;
+    color: #999;
+}
+.zhuche .zhuche2 {
+    margin-left: 104px;
+    height: 26px;
+    padding: 0;
+}
+.zhuche .zhuche2 input {
+    width: 120px;
+    height: 20px;
+    outline: none;
+    color: #333;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #eeeeee, #cccccc, #eeeeee);
+}
+.zhuche .zhuche4 {
+    height: 50px;
+}
+.zhuche .zhuche4 div {
+    width: 352px;
+    display: flex;
+    justify-content: flex-end;
+}
+.zhuche .zhuche4 div span {
+    display: inline-block;
+    width: 80px;
+    height: 20px;
+    background-color: #ddd;
+    margin-left: 4px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+.zhuche .zhuche6 {
+    margin-left: 104px;
+}
+.zhuche .zhuche6 input {
+    width: 160px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #e02025;
+    font-weight: bold;
+}
+.zhuche .zhuche7 {
+    margin-left: 110px;
+    height: 20px;
+    padding: 0;
+}
+.zhuche .zhuche7 a {
+    font-size: 12px;
+    color: #e02025;
+}
+.zhuche .zhuche7 a:hover {
+    text-decoration: underline;
+}

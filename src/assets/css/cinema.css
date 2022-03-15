@@ -1,0 +1,226 @@
+#cinema{
+    margin-top: 81px;
+}
+.tags-panel {
+    border: 1px solid #e5e5e5;
+    padding: 0 20px;
+    margin: 40px 0;
+    position: relative;
+}
+.tags-panel li,
+.tags-panel ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.tags-line {
+    padding: 10px 0 !important;
+}
+.tags-line-border {
+    border-top: 1px dashed #e5e5e5;
+}
+.tags-title {
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    color: #999;
+    font-size: 14px;
+}
+.pre-date {
+    font-size: 12px;
+    color: #faaf00;
+}
+.tags-panel ul.tags {
+    margin-left: 40px;
+}
+.tags a:hover {
+    color: #ef4238;
+}
+.tags li {
+    border-radius: 14px;
+    padding: 3px 9px;
+    display: inline-block;
+    margin-left: 12px;
+}
+.tags li.active {
+    background: #f34d41;
+    color: #fff;
+}
+.tags li.active .pre-date {
+    color: #fff;
+}
+.tags li a {
+    color: #333;
+    font-size: 14px;
+}
+.tags li.active a {
+    color: #fff;
+}
+.cinemas-list{
+    border: 1px solid #e5e5e5;
+    padding: 20px 90px;
+    /*box-shadow: inset 0 0 100px 80px #ededed;*/
+}
+.cinemas-list .no-cinemas {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #333;
+}
+.cinemas-list .cinemas-list-header {
+    font-size: 18px;
+    color: #333;
+    border-left: 4px solid #f03d37;
+    padding-left: 6px;
+    line-height: 18px;
+    margin: 0;
+    position: relative;
+}
+.cinemas-list .cinemas-list-filter {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 0;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+}
+.cinemas-list .cinemas-list-filter-title {
+    display: block;
+    width: 70px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+.cinemas-list .cinemas-list-filter-title img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.cinemas-list .cinemas-list-filter-info {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 56px;
+    text-align: center;
+}
+.cinemas-list .cinemas-list-filter-info .filter-item {
+    height: 28px;
+    margin: 0;
+    line-height: 28px;
+    width: 64px;
+    padding-left: 16px;
+}
+.cinemas-list .cinemas-list-filter-info .filter-item a {
+    color: #666;
+}
+.cinemas-list .sort-choosed {
+    color: #f03d37;
+    width: 83px;
+}
+.cinemas-list .cinemas-list-filter:hover .cinemas-list-filter-info {
+    display: block;
+}
+.cinemas-list .filter-item:hover {
+    background: #ccc;
+}
+.cinemas-list .cinema-cell {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.cinemas-list .cinema-info {
+    display: inline-block;
+    max-width: 80%;
+}
+.cinemas-list .cinema-name {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.cinemas-list .cinema-name:hover {
+    color: #f03d37;
+}
+.cinemas-list .cinema-address {
+    font-size: 14px;
+    line-height: 14px;
+    color: #999;
+}
+.cinemas-list .price {
+    float: right;
+    font-size: 12px;
+    color: #999;
+    height: 45px;
+    line-height: 45px;
+}
+.cinemas-list .price .rmb {
+    margin-right: -4px;
+}
+.cinemas-list .price .price-num {
+    font-size: 16px;
+    margin-right: -3px;
+    font-weight: 700;
+}
+.cinemas-list .buy-btn {
+    float: right;
+    width: 80px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 36px;
+    margin-right: 20px;
+}
+.cinemas-list .buy-btn a {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    background-color: #f03d37;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 100px;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 10px -2px #f03d37;
+    box-shadow: 0 2px 10px -2px #f03d37;
+}
+.cinemas-list .buy-btn a:hover {
+    background-color: #ff5e59;
+}
+.cinemas-list .cinema-tags {
+    margin-top: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #509fc9;
+    line-height: 18px;
+}
+.cinemas-list .cinema-tags span.cinema-tags-item {
+    display: inline-block;
+    border: 0.7px solid #509fc9;
+    border-radius: 3px;
+    padding: 0 2px;
+    margin-right: 8px;
+}
+.cinema-info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.font1{
+    color: black;
+    font-weight: bold;
+
+}
+.font2{
+    font-size: 14px;
+}
+.font3{
+    color: brown;
+    font-size: 12px;
+}
+.money{
+    color: red;
+    font-size: 16px;
+}

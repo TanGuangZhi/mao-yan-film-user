@@ -1,0 +1,135 @@
+a {
+    text-decoration: none;
+}
+/*header {*/
+/*    width: 980px;*/
+/*    height: auto;*/
+/*    margin: 40px auto 30px;*/
+/*}*/
+/*header a {*/
+/*    display: block;*/
+/*    width: 234px;*/
+/*    height: 48px;*/
+/*    background: url("../../../public/images/logo.png");*/
+/*}*/
+
+#login{
+    margin-top: 80px;
+}
+input {
+    outline: none;
+}
+.denglu .denglu1 {
+    margin: 0 auto 70px;
+    width: 980px;
+    display: flex;
+}
+.denglu .denglu1 .denglu1_1 {
+    width: 480px;
+    height: 370px;
+    margin-right: 115px;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_1 {
+    width: 268px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #666;
+    font-size: 12px;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_1 a {
+    color: #666;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_1 a i {
+    display: inline-block;
+    background: url("../../../public/images/sprite_webpage.png") -14px -57px;
+    background-size: 195px 113px;
+    width: 12px;
+    height: 15px;
+    vertical-align: bottom;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_1 a:hover span {
+    text-decoration: underline;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_2 {
+    margin: 8px 0 16px;
+    position: relative;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_2 input {
+    width: 268px;
+    font-size: 12px;
+    height: 34px;
+    padding: 5px 4px 5px 30px;
+    box-sizing: border-box;
+    color: #666;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_2 i {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    display: inline-block;
+    background: url("../../../public/images/denglu_1.png");
+    width: 18px;
+    height: 17px;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_2 input:focus {
+    outline: 1px solid #e02025;
+    border: none;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_3 {
+    margin: 8px 0;
+    position: relative;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_3 input {
+    width: 268px;
+    font-size: 12px;
+    height: 34px;
+    padding: 5px 4px 5px 30px;
+    box-sizing: border-box;
+    color: #666;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_3 i {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    display: inline-block;
+    background: url("../../../public/images/denglu_2.png");
+    width: 18px;
+    height: 17px;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_3 input:focus {
+    outline: 1px solid #e02025;
+    border: none;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_4 {
+    text-align: right;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_4 a {
+    font-size: 12px;
+    color: #ec454a;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_4 a:hover {
+    text-decoration: underline;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_5 {
+    padding: 8px 0;
+    text-align: center;
+}
+.denglu .denglu1 .denglu1_2 .denglu1_2_5 input {
+    width: 100%;
+    height: 32px;
+    color: #fff;
+    border: #e02025;
+    background: #ec454a;
+}
+.denglu .denglu1 .denglu1_2 p {
+    font-size: 12px;
+    color: #666;
+}
+.denglu .denglu1 .denglu1_2 p .font {
+    font-size: 12px;
+    color: #ec454a;
+}
+.denglu .denglu1 .denglu1_2 p .font:hover {
+    text-decoration: underline;
+}

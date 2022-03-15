@@ -1,0 +1,312 @@
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+.dingbu {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 999;
+}
+.dingbu nav {
+  height: 80px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.dingbu nav div:hover .sanjiao {
+  transform: rotate(180deg);
+}
+.dingbu nav .bian {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+.dingbu nav .bian:hover {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.dingbu nav .sanjiao {
+  /*border: 2px solid blue;*/
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 5px solid #666;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  vertical-align: inherit;
+}
+.dingbu nav .logo {
+  margin-top: 20px;
+  display: inline-block;
+  background-image: url("../../../public/images/logo.png");
+  width: 133px;
+  height: 40px;
+}
+.dingbu nav .xiala1 {
+  width: 50px;
+  margin: 0 8px;
+  height: 80px;
+  position: relative;
+}
+.dingbu nav .xiala1 .xiala1_1 {
+  width: 50px;
+  padding: 0 10px;
+}
+.dingbu nav .xiala1 .xiala1_1 .cd {
+  display: inline-block;
+  color: #333;
+  margin-top: 30px;
+}
+.dingbu nav .xiala1 .xiala1_1 ul {
+  position: absolute;
+  top: 80px;
+  left: -1px;
+  width: 480px;
+  height: 260px;
+  /*border: 1px solid #ccc;*/
+  border: 1px solid red;
+  border-top: none;
+  overflow: auto;
+  display: none;
+  background-color: #fff;
+}
+.dingbu nav .xiala1 .xiala1_1 ul .xiala1_1_d {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.dingbu nav .xiala1 .xiala1_1 ul .xiala1_1_d a {
+  color: #000;
+  font-size: 14px;
+}
+.dingbu nav .xiala1 .xiala1_1 ul li {
+  /*width: 50px;*/
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.dingbu nav .xiala1 .xiala1_1 ul li span {
+  display: block;
+  margin-right: 10px;
+  width: 22px;
+  height: 20px;
+  background-color: #d8d8d8;
+  text-align: center;
+}
+.dingbu nav .xiala1 .xiala1_1 ul li div {
+  width: 440px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.dingbu nav .xiala1 .xiala1_1 ul li a {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #000;
+  border-radius: 4px;
+}
+.dingbu nav .xiala1 .xiala1_1 ul li a:hover {
+  background-color: #f00;
+  color: #fff;
+}
+.dingbu nav .xiala1:hover ul {
+  display: block;
+}
+.dingbu nav .navbar {
+  width: 400px;
+  display: flex;
+  line-height: 80px;
+  margin-left: 40px;
+}
+.dingbu nav .navbar li {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+.dingbu nav .navbar li a {
+  font-size: 18px;
+  color: #333;
+  padding: 28px 22px;
+}
+.dingbu nav .navbar li:nth-of-type(1) {
+  /* background-color: #ef4238; */
+}
+.dingbu nav .navbar li:nth-of-type(1) a {
+  /* color: #fff; */
+}
+.dingbu nav .navbar li:not(:nth-of-type(1)):hover > a {
+  color: #f00;
+}
+.dingbu nav .shouji {
+  /*border: 1px solid red;*/
+  width: 100px;
+  height: 81px;
+  text-align: center;
+  position: relative;
+  margin-left: 30px;
+}
+.dingbu nav .shouji span {
+  line-height: 80px;
+  color: #333;
+}
+.dingbu nav .shouji .shouji_1 {
+  width: 15px;
+  height: 24px;
+  display: inline-block;
+  background-image: url("../../../public/images/phone.png");
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.dingbu nav .shouji span:nth-of-type(2) {
+  font-size: 14px;
+}
+.dingbu nav .shouji .shouji1 {
+  width: 102px;
+  /*border: 5px solid blue;*/
+  height: 160px;
+  /*text-align: center;*/
+  position: absolute;
+  top: 80px;
+  display: none;
+  background-color: #fff;
+}
+.dingbu nav .shouji .shouji1 div {
+  width: 100px;
+  height: 100px;
+}
+.dingbu nav .shouji .shouji1 div div {
+  width: 82px;
+  height: 82px;
+  background: url("../../../public/images/app.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.dingbu nav .shouji .shouji1 p:nth-of-type(1) {
+  font-size: 14px;
+  color: #000;
+}
+.dingbu nav .shouji .shouji1 p:nth-of-type(2) {
+  font-size: 14px;
+  color: #999;
+}
+.dingbu nav .shouji:hover .shouji1 {
+  display: block;
+}
+.dingbu nav .search-form {
+  width: 260px;
+  line-height: 80px;
+  margin-left: 20px;
+  position: relative;
+}
+.dingbu nav .search-form .search {
+  display: inline-block;
+  height: 40px;
+  width: 220px;
+  padding: 0 40px 0 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 30px;
+  background-color: #faf8fa;
+  color: #333;
+  outline: none;
+}
+.dingbu nav .search-form .submit {
+  display: inline-block;
+  position: absolute;
+  left: 222px;
+  top: 21px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: url("../../../public/images/search.png") no-repeat #ef4238 center;
+}
+.dingbu nav .denglu {
+  height: 80px;
+  /*border: 2px solid greenyellow;*/
+  margin-left: 20px;
+  width: 100px;
+  text-align: center;
+  position: relative;
+}
+.dingbu nav .denglu .login {
+  display: inline-block;
+  margin-top: 20%;
+}
+.dingbu nav .denglu .login img {
+  margin: 0 20px;
+  width: 40px;
+  border-radius: 50%;
+}
+.dingbu nav .denglu .sanjiao {
+  margin: 0px 1px 15px 0;
+}
+.dingbu nav .denglu span {
+  margin-bottom: 14px;
+}
+.dingbu nav .denglu div {
+  /*border: 2px solid red;*/
+  position: absolute;
+  top: 80px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: none;
+  background-color: #fff;
+}
+.dingbu nav .denglu div .login1 {
+  line-height: 20px;
+  width: 100px;
+  height: 30px;
+  /*border: 2px solid blue;*/
+  margin-top: 10px;
+  color: #999;
+  font-size: 14px;
+  /*position: relative;*/
+  display: block;
+}
+.dingbu nav .denglu div .login1:hover {
+  color: #f00;
+  transition: all linear 1s;
+  text-decoration: underline;
+}
+/*.dingbu nav .denglu div .login1::before {*/
+/*    content: "";*/
+/*    width: 10px;*/
+/*    border-bottom: 1px solid transparent;*/
+/*    transition: all linear 1s;*/
+/*    position: absolute;*/
+/*    left: 22px;*/
+/*    bottom: 0;*/
+/*}*/
+.dingbu nav .denglu div .login1:hover::before {
+  width: 28px;
+  border-color: #f00;
+  left: -2px;
+}
+.dingbu nav .denglu:hover div {
+  display: block;
+}
+
+.bannerActive {
+  background-color: #ef4238;
+  color: #fff;
+}

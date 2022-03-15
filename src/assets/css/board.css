@@ -1,0 +1,201 @@
+a {
+    text-decoration: none;
+}
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+#board{
+    margin-top: 81px;
+}
+.header {
+    height: 60px;
+    background-color: #47464a;
+    margin-top: 81px;
+}
+.header ul {
+    width: 796px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header ul li .active {
+    color: #f24030;
+}
+.header ul li  .active::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-top: 8px solid transparent;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -4px;
+}
+.header ul li a {
+    color: #999;
+}
+.header ul li a:hover {
+    color: #f24030;
+}
+.header ul li a {
+    position: relative;
+}
+.header ul li a:hover::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-top: 8px solid transparent;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -4px;
+}
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+.content .content1 {
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.content .content1 .score{
+    width: 200px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.content .content1 img{
+     width: 160px;
+     height: 220px;
+ }
+.content .content1 .cinema img{
+     width: 300px;
+     height: 200px;
+ }
+.content .content1 .content1_1 p {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.content .content1 .content1_1 p span {
+    color: #ffb400;
+}
+.content .content1 .content1_1 p:nth-of-type(2) {
+    margin-top: 4px;
+}
+.content .content1 dl {
+    margin-top: 40px;
+}
+.content .content1 dl dd {
+    height: 220px;
+    margin: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content1 dl dd div:nth-of-type(1) {
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.content .content1 dl dd div:nth-of-type(1) i {
+    width: 50px;
+    height: 50px;
+    background: #f7f7f7;
+    font-size: 18px;
+    color: #999;
+    text-align: center;
+    line-height: 50px;
+}
+.content .content1 dl dd div:nth-of-type(1) .No2,
+.content .content1 dl dd div:nth-of-type(1) .No3 {
+    width: 50px;
+    height: 50px;
+    background: #ffb400;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+.content .content1 dl dd div:nth-of-type(1) .No1 {
+    display: block;
+    /*background-color: none;*/
+    width: 50px;
+    height: 50px;
+    background: url("../../../public/images/Bangdan_p1.png") no-repeat;
+}
+.content .content1 dl dd .cinema{
+    margin: 0 30px;
+    width: 300px;
+    height: 200px;
+}
+.content .content1 dl dd .cinema:hover {
+    box-shadow: 4px 4px 10px 0 #aaa;
+}
+
+.content .content1 dl dd .img {
+    width: 160px;
+    height: 220px;
+}
+.content .content1 dl dd .img:hover {
+    box-shadow: 4px 4px 10px 0 #aaa;
+}
+.content .content1 dl dd div:nth-of-type(3) {
+    width: 680px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .content1 dl dd div:nth-of-type(3) div:first-child {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content .content1 dl dd div:nth-of-type(3) div:first-child .font {
+    font-size: 26px;
+    color: #333;
+}
+.content .content1 dl dd div:nth-of-type(3) div:first-child  .tips{
+    font-size: 10px;
+    color: #666;
+}
+.content .content1 dl dd div:nth-of-type(3) div:first-child p:nth-of-type(1) {
+    margin-top: 18px;
+    color: #333;
+    font-size: 16px;
+}
+.content .content1 dl dd div:nth-of-type(3) div:first-child p {
+    margin-top: 8px;
+    color: #999;
+    font-size: 16px;
+}
+.content .content1 dl dd div:nth-of-type(3) div:last-child i:nth-of-type(1) {
+    color: #ffb400;
+    font-size: 56px;
+    font-weight: 700;
+}
+.content .content1 dl dd div:nth-of-type(3) div:last-child i:nth-of-type(2) {
+    color: #ffb400;
+    font-size: 26px;
+    font-weight: 700;
+}
