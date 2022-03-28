@@ -3,6 +3,9 @@
 ## 介绍
 仿猫眼电影-用户界面
 
+管理员界面：https://github.com/TanGuangZhi/mao-yan-film-admin
+后端: https://github.com/TanGuangZhi/mao-yan-film-end
+
 ## 软件架构
 ### 前端
 
