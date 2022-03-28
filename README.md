@@ -40,7 +40,7 @@ npm run serve
 
 ### 团队合作任务看板（trello）
 
-![image-20220328132704352](public/README.assets/image-20220328132704352.png)
+![image-20220328134506176](public/README.assets/image-20220328134506176.png)
 
 
 
