@@ -24,7 +24,6 @@
               <span class="zhuL1_1_2">
                 <router-link
                   :to="{ path: '/movie', query: { filmName: 'HotFilmList' } }"
-                  target="_blank"
                 >
                   全部
                 </router-link>
@@ -38,17 +37,16 @@
                     <router-link
                       :to="{ path: '/FilmDetail', query: { filmId: item._id } }"
                       class="link"
-                      target="_blank"
                     >
                       <img
-                        :src="'http://localhost:3000/' + item.filmImg"
+                        :src="'http://42.192.86.106:3000/' + item.filmImg"
                         alt=""
                       />
                       <div>
                         <span>{{ item.filmName }}</span>
                         <span>
-                          <i>{{ item.comment[0].filmScore }}</i>
-                          <i>0</i>
+                          <!-- <i>{{ item.comment[0].filmScore }}</i>
+                          <i>0</i> -->
                         </span>
                       </div>
                       <i class="DIMAX3"></i>
@@ -65,11 +63,12 @@
               </dl>
             </div>
           </div>
+
           <!--即将上映 -->
           <div class="zhuL2">
             <div class="zhuL2_1">
               <span class="zhuL2_1_1">
-                即将上映{{ futureFilmListLength }}部
+                即将上映 ({{ futureFilmListLength }}部)
               </span>
               <span class="zhuL2_1_2">
                 <router-link
@@ -88,11 +87,10 @@
                 <div class="zhuL2_2">
                   <router-link
                     :to="{ path: '/FilmDetail', query: { filmId: film._id } }"
-                    target="_blank"
                   >
                     <div class="zhuL2_2_1">
                       <img
-                        :src="'http://localhost:3000/' + film.filmImg"
+                        :src="'http://42.192.86.106:3000/' + film.filmImg"
                         style="width: 100%"
                       />
                       <div>
@@ -118,6 +116,7 @@
             </dl>
           </div>
           <div class="zhuL3"></div>
+
           <!--经典影片 -->
           <div class="zhuL1">
             <div class="zhuL1_1">
@@ -143,17 +142,16 @@
                     <router-link
                       :to="{ path: '/FilmDetail', query: { filmId: item._id } }"
                       class="link"
-                      target="_blank"
                     >
                       <img
-                        :src="'http://localhost:3000/' + item.filmImg"
+                        :src="'http://42.192.86.106:3000/' + item.filmImg"
                         alt=""
                       />
                       <div>
                         <span>{{ item.filmName }}</span>
                         <span>
-                          <i>{{ item.comment[0].filmScore }}</i>
-                          <i>0</i>
+                          <!-- <i>{{ item.comment[0].filmScore }}</i>
+                          <i>0</i> -->
                         </span>
                       </div>
                       <i class="DIMAX3"></i>
@@ -172,19 +170,24 @@
           </div>
           <div class="zhuL3"></div>
         </article>
+
         <aside>
           <!--今日票房排行-->
           <div class="zhuR1">
             <div class="zhuR1_1">
               <span>今日票房</span>
             </div>
+            <el-empty
+              v-if="todayBoxOfficeList.length == 0"
+              description="正在等待首份票房诞生"
+            ></el-empty>
             <div class="zhuR1_2">
               <ul v-for="(item, index) in todayBoxOfficeList" :key="index">
-                <li>
+                <li @click="jumpToDetails(item.filmIdToDetail[0]._id)">
                   <div>
                     <img
                       :src="
-                        'http://localhost:3000/' +
+                        'http://42.192.86.106:3000/' +
                         item.filmIdToDetail[0].filmImg
                       "
                       alt=""
@@ -205,6 +208,7 @@
               </ul>
             </div>
           </div>
+
           <!--今日大盘-->
           <div class="zhuR2">
             <div class="zhuR21">
@@ -229,6 +233,7 @@
               </p>
             </div>
           </div>
+
           <!--最受期待排行-->
           <div class="zhuR3">
             <div class="zhuR3_1">
@@ -252,7 +257,7 @@
                       <img
                         v-for="(item, index) in filmExpectList"
                         v-if="index == 0"
-                        :src="'http://localhost:3000/' + item.filmImg"
+                        :src="'http://42.192.86.106:3000/' + item.filmImg"
                         alt=""
                         style="height: 195px"
                       />
@@ -291,7 +296,7 @@
                   >
                     <div class="zhuR3_22_1">
                       <img
-                        :src="'http://localhost:3000/' + item.filmImg"
+                        :src="'http://42.192.86.106:3000/' + item.filmImg"
                         alt=""
                         style="height: 125px; width: 150px"
                       />
@@ -330,7 +335,7 @@
             </div>
           </div>
           <!--查看完整榜单-->
-          <div class="zhuR4">
+          <!-- <div class="zhuR4">
             <div class="zhuR4_1">
               <div class="zhuR4_1">
                 <span class="zhuR4_1_1">TOP 100</span>
@@ -465,7 +470,7 @@
                 </li>
               </ul>
             </div>
-          </div>
+          </div> -->
         </aside>
       </div>
     </div>
@@ -542,7 +547,7 @@ export default {
 
       // 2. 今日大盘
       let data = await this.queryTodayMarketAsync();
-      this.todayBoxMarketAmount = data[0]?.sum;
+      this.todayBoxMarketAmount = data[0]?.sum ?? 0;
 
       // 2.1 动态更新时间(每秒更新一次)
       this.timeNow = dayjs().format("YYYY-MM-DD HH:mm");
@@ -565,6 +570,11 @@ export default {
     async queryClassicFilm() {
       await this.queryManyFilmAsync({ pageSize: 8, status: 3 });
       this.classicFilmList_8 = this.classicPageInfo.filmList.slice(0, 8);
+    },
+
+    jumpToDetails(_id) {
+      console.log(111);
+      this.$router.push({ path: "/FilmDetail", query: { filmId: _id } });
     },
   },
   created() {

@@ -1,13 +1,14 @@
 <!--
  * @Author: TanGuangZhi
  * @Date: 2022-03-08 19:27:15 Tue
- * @LastEditTime: 2022-03-11 21:28:46 Fri
+ * @LastEditTime: 2022-04-03 13:50:33 Sun
  * @LastEditors: TanGuangZhi
  * @Description: 
  * @Keys: Vue, Web-Server, ElementUI
 -->
 <template>
   <div>
+    <router-link to="/index">返回首页</router-link>
     <el-row :gutter="15" style="width: 300px; margin: 50px 0 0 40%">
       <el-form
         ref="elForm"
@@ -49,7 +50,9 @@
         <el-col :span="24">
           <el-form-item size="large">
             <el-button type="primary" @click="loginBtnClick">登录</el-button>
-            <el-button @click="resetForm">重置</el-button>
+            <el-button type="default">
+              <router-link to="/register">注册</router-link>
+            </el-button>
           </el-form-item>
         </el-col>
       </el-form>

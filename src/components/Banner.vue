@@ -85,7 +85,10 @@
         </form>
         <div class="denglu bian">
           <router-link to="./login" class="login">
-            <img :src="'http://localhost:3000/' + userInfo.userImg" alt="" />
+            <img
+              :src="'http://42.192.86.106:3000/' + userInfo.userImg"
+              alt=""
+            />
           </router-link>
           <span class="sanjiao"></span>
           <div>
@@ -145,14 +148,13 @@ export default {
     searchBtn() {
       if (this.SearchBox) {
         this.$router.push("./search").catch((err) => err);
-        setTimeout(()=>{
+        setTimeout(() => {
           bus.$emit("searchBtn", this.SearchBox);
           this.SearchBox = "";
-        },20);
+        }, 20);
       } else {
         this.$router.push("./movie").catch((err) => err);
       }
-
     },
     // 1.
     logout() {
@@ -171,23 +173,19 @@ export default {
 
     // 3.
     toggleActive(e) {
-      // this.current = "Film";
       e.target.className += " bannerActive";
-      // console.log(e);
     },
   },
   deactivated() {
-    setTimeout(()=>{
-      bus.$off("searchBtn")
-    },20)
+    setTimeout(() => {
+      bus.$off("searchBtn");
+    }, 20);
   },
   created() {
     this.SearchBox = "";
-    let loginUserInfo = localStorage.getItem("loginUserInfo");
+    let loginUserInfo = this.$store.state.userStore.loginUserInfo;
     if (loginUserInfo) {
-      this.userInfo = JSON.parse(loginUserInfo).userInfo;
-    } else {
-      this.userInfo = this.$store.state["userStore"].userList;
+      this.userInfo = loginUserInfo;
     }
   },
 };

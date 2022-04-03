@@ -118,7 +118,7 @@ export default {
         this.formData.orderId = this.toCommentPageData.orderId;
         this.formData.commentTime = dayjs().format("YYYY-MM-DD HH:mm");
         this.formData.filmScore *= 2;
-        this.$http("http://localhost:3000/user/insertComment", {
+        this.$http("http://42.192.86.106:3000/user/insertComment", {
           params: this.formData,
         }).then((res) => {
           //   console.log(res);

@@ -1,7 +1,7 @@
 <!--
  * @Author: TanGuangZhi
  * @Date: 2022-03-08 19:27:15 Tue
- * @LastEditTime: 2022-03-11 20:57:52 Fri
+ * @LastEditTime: 2022-04-03 12:41:01 Sun
  * @LastEditors: TanGuangZhi
  * @Description: 
  * @KeyWords: Vue, Web-Server, ElementUI
@@ -9,6 +9,10 @@
 <template>
   <div id="order">
     <Comment :dialogObj="dialogObj" :toCommentPageData="toCommentPageData" />
+    <el-empty
+      v-if="userOrderInfoList.length == 0"
+      description="暂无订单"
+    ></el-empty>
     <el-card
       class="box-card"
       v-for="(orderInfo, index) in userOrderInfoList"
@@ -17,7 +21,7 @@
       <div slot="header" class="clearfix">
         <span>《{{ orderInfo.filmIdToDetail[0].filmName }}》</span>
 
-        <span style="margin-left: 60%">￥{{ orderInfo.orderPrice }} 元</span>
+        <span style="margin-left: 50%">￥{{ orderInfo.orderPrice }} 元</span>
         <el-button
           type="warning"
           round
@@ -32,7 +36,9 @@
         ></el-button>
       </div>
       <img
-        :src="'http://localhost:3000/' + orderInfo.filmIdToDetail[0].filmImg"
+        :src="
+          'http://42.192.86.106:3000/' + orderInfo.filmIdToDetail[0].filmImg
+        "
         style="width: 30px"
       />
       <span style="margin-bottom: 15px">
@@ -59,7 +65,7 @@ export default {
   },
   methods: {
     queryUserOrder() {
-      this.$http("http://localhost:3000/order/queryUserOrder", {
+      this.$http("http://42.192.86.106:3000/order/queryUserOrder", {
         params: { userId: this.userId },
       }).then((res) => {
         console.log(res.data);

@@ -7,7 +7,7 @@
             <img
               class="avatar"
               v-if="cinema.brand"
-              :src="'http://localhost:3000/' + cinema.brand[0].brandImg"
+              :src="'http://42.192.86.106:3000/' + cinema.brand[0].brandImg"
             />
           </div>
         </div>
@@ -91,7 +91,7 @@
             @click="clickFilm(film._id, cinema._id)"
             :key="index"
           >
-            <img :src="'http://localhost:3000/' + film.filmImg" />
+            <img :src="'http://42.192.86.106:3000/' + film.filmImg" />
             <!--            <span :class="{'pointer':pointer==index}"></span>-->
             <!--            <img src="../../public/images/film/6.jpg"/>-->
             <!--            <img src="../../public/images/film/3.jpg"/>-->

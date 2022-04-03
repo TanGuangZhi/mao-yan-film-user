@@ -1,5 +1,6 @@
 <template>
   <div>
+    <router-link to="/index">返回首页</router-link>
     <el-row :gutter="15" style="width: 300px; margin: 50px 0 0 40%">
       <el-form
         ref="elForm"
@@ -100,8 +101,9 @@ export default {
       if (res == "200") {
         this.$message({
           type: "success",
-          message: "注册成功",
+          message: "注册成功,请先激活邮箱~",
         });
+        this.$router.push("/login");
       } else {
         this.$message({
           type: "error",

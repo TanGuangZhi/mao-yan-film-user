@@ -100,18 +100,21 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
 
 const needCheckTokenArray = ["/chooseSeat", "/comment"];
+import store from "../stores/indexStore";
 
 router.beforeEach((to, from, next) => {
   let token = localStorage.getItem("token");
   // 2. 验证token是否有效
   if (token) { // 2.1 有token
     indexApi.user.checkTokenApi(token).then(res => {
+      // 用于保存登录用户状态
+      store.commit("userStore/SET_LOGIN_USER_INFO", res.data.user)
       next();
     }).catch(err => { // 2.2 失效
       localStorage.removeItem("token");

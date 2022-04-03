@@ -75,7 +75,11 @@
           </div>
           <!-- 电影列表-->
           <div class="movies-list">
-            <dl class="movie-list" v-if="getFilmListLength(filmPageInfo.filmList)" id="movieListId">
+            <dl
+              class="movie-list"
+              v-if="getFilmListLength(filmPageInfo.filmList)"
+              id="movieListId"
+            >
               <dd v-for="(film, index) in filmPageInfo.filmList" :key="index">
                 <div class="movie-item film-channel">
                   <router-link
@@ -83,7 +87,7 @@
                     target="_blank"
                   >
                     <div class="movie-poster">
-                      <img :src="'http://localhost:3000/' + film.filmImg" />
+                      <img :src="'http://42.192.86.106:3000/' + film.filmImg" />
                     </div>
                   </router-link>
                   <div class="channel-action channel-action-sale">
@@ -97,7 +101,7 @@
                   </router-link>
                 </div>
                 <div class="channel-detail channel-detail-orange">
-                  <i class="integer">{{ getFilmScore(film.comment[0])}}</i>
+                  <i class="integer">{{ getFilmScore(film.comment[0]) }}</i>
                   <i>0</i>
                 </div>
               </dd>
