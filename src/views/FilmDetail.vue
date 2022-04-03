@@ -10,7 +10,7 @@
             <i></i>
             <a href="#">
               <img
-                :src="'http://42.192.86.106:3000/' + film.filmImg"
+                :src="'http://localhost:3000/' + film.filmImg"
                 alt=""
                 style="height: 310px"
               />
@@ -142,7 +142,7 @@
                 <div>
                   <a href="#">
                     <img
-                      :src="'http://42.192.86.106:3000/' + film.directorImg"
+                      :src="'http://localhost:3000/' + film.directorImg"
                       alt=""
                       style="width: 138px; height: 170px"
                     />
@@ -162,8 +162,7 @@
                   <a href="#">
                     <img
                       :src="
-                        'http://42.192.86.106:3000/' +
-                        film.filmActor[0].actorImg
+                        'http://localhost:3000/' + film.filmActor[0].actorImg
                       "
                       alt=""
                       style="width: 138px; height: 170px"
@@ -237,7 +236,7 @@
                 <div class="content_L5_2_1">
                   <img
                     :src="
-                      'http://42.192.86.106:3000/' +
+                      'http://localhost:3000/' +
                       comment.userId2Details[0].userImg
                     "
                     alt=""
@@ -282,7 +281,7 @@
                 <div>
                   <a href="#">
                     <img
-                      :src="'http://42.192.86.106:3000/' + film.filmImg"
+                      :src="'http://localhost:3000/' + film.filmImg"
                       alt=""
                       style="width: 140px; height: 150px"
                     />
@@ -356,7 +355,7 @@ export default {
       }
       this.toCommentPageData.userId = userId;
       this.toCommentPageData.filmId = this.$route.query.filmId;
-      this.$http("http://42.192.86.106:3000/order/isCanComment", {
+      this.$http("http://localhost:3000/order/isCanComment", {
         params: { userId, filmId: this.film._id },
       }).then((res) => {
         // console.log(res);

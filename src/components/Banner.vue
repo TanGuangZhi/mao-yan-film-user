@@ -85,10 +85,7 @@
         </form>
         <div class="denglu bian">
           <router-link to="./login" class="login">
-            <img
-              :src="'http://42.192.86.106:3000/' + userInfo.userImg"
-              alt=""
-            />
+            <img :src="'http://localhost:3000/' + userInfo.userImg" alt="" />
           </router-link>
           <span class="sanjiao"></span>
           <div>

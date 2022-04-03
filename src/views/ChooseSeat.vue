@@ -78,9 +78,7 @@
         <div class="side">
           <div class="movie-info clearfix">
             <div class="poster">
-              <img
-                :src="'http://42.192.86.106:3000/' + filmDetailInfo.filmImg"
-              />
+              <img :src="'http://localhost:3000/' + filmDetailInfo.filmImg" />
             </div>
             <div class="content">
               <p class="name text-ellipsis">{{ filmDetailInfo.filmName }}</p>
@@ -266,7 +264,7 @@ export default {
 
     // 1.2
     showBackSoldSeat() {
-      this.$http("http://42.192.86.106:3000/order/querySoldSeat", {
+      this.$http("http://localhost:3000/order/querySoldSeat", {
         params: {
           filmId: this.transferValue.filmId,
           cinemaId: this.transferValue.cinemaId,
@@ -300,7 +298,7 @@ export default {
       temp.orderId = orderId;
       temp.totalPrice = this.totalPrice;
       // jump to alipay page
-      this.$http(`http://42.192.86.106:3000/order/pay`, { params: temp }).then(
+      this.$http(`http://localhost:3000/order/pay`, { params: temp }).then(
         (res) => {
           let orderInfoList = {};
           let loginUserInfo = localStorage.getItem("loginUserInfo");
@@ -327,7 +325,7 @@ export default {
           });
 
           // insert to order table
-          this.$http(`http://42.192.86.106:3000/order/insertOrder`, {
+          this.$http(`http://localhost:3000/order/insertOrder`, {
             params: orderInfoList,
           }).then(() => {
             window.location.href = res.data;

@@ -87,7 +87,7 @@
                     target="_blank"
                   >
                     <div class="movie-poster">
-                      <img :src="'http://42.192.86.106:3000/' + film.filmImg" />
+                      <img :src="'http://localhost:3000/' + film.filmImg" />
                     </div>
                   </router-link>
                   <div class="channel-action channel-action-sale">

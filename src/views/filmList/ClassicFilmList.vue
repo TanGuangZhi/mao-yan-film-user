@@ -90,11 +90,11 @@
                     target="_blank"
                   >
                     <div class="movie-poster">
-                      <img :src="'http://42.192.86.106:3000/' + film.filmImg" />
+                      <img :src="'http://localhost:3000/' + film.filmImg" />
                       <!--                      <el-image-->
                       <!--                          style="width: 100px; height: 100px"-->
-                      <!--                          :src="'http://42.192.86.106:3000/'+film.filmImg"-->
-                      <!--                          :preview-src-list="'http://42.192.86.106:3000/'+film.filmImg">-->
+                      <!--                          :src="'http://localhost:3000/'+film.filmImg"-->
+                      <!--                          :preview-src-list="'http://localhost:3000/'+film.filmImg">-->
                       <!--                      </el-image>-->
                     </div>
                   </router-link>

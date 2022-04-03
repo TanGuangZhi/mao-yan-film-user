@@ -39,7 +39,7 @@
                       class="link"
                     >
                       <img
-                        :src="'http://42.192.86.106:3000/' + item.filmImg"
+                        :src="'http://localhost:3000/' + item.filmImg"
                         alt=""
                       />
                       <div>
@@ -90,7 +90,7 @@
                   >
                     <div class="zhuL2_2_1">
                       <img
-                        :src="'http://42.192.86.106:3000/' + film.filmImg"
+                        :src="'http://localhost:3000/' + film.filmImg"
                         style="width: 100%"
                       />
                       <div>
@@ -144,7 +144,7 @@
                       class="link"
                     >
                       <img
-                        :src="'http://42.192.86.106:3000/' + item.filmImg"
+                        :src="'http://localhost:3000/' + item.filmImg"
                         alt=""
                       />
                       <div>
@@ -187,7 +187,7 @@
                   <div>
                     <img
                       :src="
-                        'http://42.192.86.106:3000/' +
+                        'http://localhost:3000/' +
                         item.filmIdToDetail[0].filmImg
                       "
                       alt=""
@@ -257,7 +257,7 @@
                       <img
                         v-for="(item, index) in filmExpectList"
                         v-if="index == 0"
-                        :src="'http://42.192.86.106:3000/' + item.filmImg"
+                        :src="'http://localhost:3000/' + item.filmImg"
                         alt=""
                         style="height: 195px"
                       />
@@ -296,7 +296,7 @@
                   >
                     <div class="zhuR3_22_1">
                       <img
-                        :src="'http://42.192.86.106:3000/' + item.filmImg"
+                        :src="'http://localhost:3000/' + item.filmImg"
                         alt=""
                         style="height: 125px; width: 150px"
                       />

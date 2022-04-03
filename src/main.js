@@ -1,7 +1,7 @@
 /*
  * @Author: TanGuangZhi
  * @Date: 2022-03-08 19:27:15 Tue
- * @LastEditTime: 2022-04-03 15:39:22 Sun
+ * @LastEditTime: 2022-04-03 20:44:30 Sun
  * @LastEditors: TanGuangZhi
  * @Description: 
  * @KeyWords: Vue, Web-Server, ElementUI
@@ -17,7 +17,7 @@ import axios from "axios";
 Vue.config.productionTip = false
 
 //配置全局
-axios.defaults.baseURL = "http://42.192.86.106:3000/"
+axios.defaults.baseURL = "http://localhost:3000/"
 Vue.prototype.$http = axios
 Vue.prototype.$indexApi = indexApi;
 

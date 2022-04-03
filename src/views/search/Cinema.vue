@@ -21,9 +21,7 @@
                 :to="{ path: '/CinemaDetail', query: { roomId: item._id } }"
               >
                 <img
-                  :src="
-                    'http://42.192.86.106:3000/' + item['brand'][0].brandImg
-                  "
+                  :src="'http://localhost:3000/' + item['brand'][0].brandImg"
                   alt=""
                 />
               </router-link>

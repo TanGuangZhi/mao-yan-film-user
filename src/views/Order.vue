@@ -36,9 +36,7 @@
         ></el-button>
       </div>
       <img
-        :src="
-          'http://42.192.86.106:3000/' + orderInfo.filmIdToDetail[0].filmImg
-        "
+        :src="'http://localhost:3000/' + orderInfo.filmIdToDetail[0].filmImg"
         style="width: 30px"
       />
       <span style="margin-bottom: 15px">
@@ -65,7 +63,7 @@ export default {
   },
   methods: {
     queryUserOrder() {
-      this.$http("http://42.192.86.106:3000/order/queryUserOrder", {
+      this.$http("http://localhost:3000/order/queryUserOrder", {
         params: { userId: this.userId },
       }).then((res) => {
         console.log(res.data);

@@ -26,7 +26,7 @@
             <router-link
               :to="{ path: '/FilmDetail', query: { filmId: item._id } }"
             >
-              <img :src="'http://42.192.86.106:3000/' + item.filmImg" alt="" />
+              <img :src="'http://localhost:3000/' + item.filmImg" alt="" />
             </router-link>
           </div>
           <div>
